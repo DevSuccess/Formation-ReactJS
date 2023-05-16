@@ -1,21 +1,24 @@
-let n = 0;
-
-function numberFormat(n) {
-    return n.toString().padStart(2, '0');
-}
-
-function render() {
-  const title = (
-    <h1 id="title">
-      Bonjour les gens <span>{numberFormat(n)}</span>
-    </h1>
+function WelcomeFun({ name, children }) {
+  return (
+    <div>
+      <h1>Bonjour {name}! </h1>
+      <p>{children}</p>
+    </div>
   );
-  ReactDOM.render(title, document.querySelector("#app"));
 }
 
-render();
+class Welcome extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1>Bonjour {this.props.name}! </h1>
+        <p>{this.props.children}</p>
+      </div>
+    );
+  }
+}
 
-window.setInterval(() => {
-  n++;
-  render();
-}, 1000);
+ReactDOM.render(
+  <Welcome name="Muriel">, Comment CV ? </Welcome>,
+  document.getElementById("app")
+);
