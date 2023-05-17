@@ -5,9 +5,9 @@ class Eleve extends React.Component {
   render() {
     return (
       <div className="eleve">
-        <h1>Elon Musk</h1>
+        <h1>{this.props.nom}</h1>
         <p>
-          Moyenne scolaire : <b>25/20</b>
+          Moyenne scolaire : <b>{this.props.moyenne}/20</b>
         </p>
       </div>
     );
