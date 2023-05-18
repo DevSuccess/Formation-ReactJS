@@ -9,7 +9,7 @@ class Eleve extends React.Component {
         <p>
           Moyenne scolaire : <b>{this.props.moyenne}/20</b>
         </p>
-        <p>Age : {Math.floor(Math.random() * 70)}</p>
+        <p>Age : {Math.floor(Math.random() * 70)} ans</p>
         <i>{this.props.children}</i>
       </div>
     );

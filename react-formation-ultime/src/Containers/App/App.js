@@ -3,7 +3,7 @@ import React from "react";
 import "./App.css";
 
 // Composants
-import Eleve from "../Eleves/Eleve";
+import Eleve from "../../Components/Eleves/Eleve";
 
 class App extends React.Component {
   state = {
