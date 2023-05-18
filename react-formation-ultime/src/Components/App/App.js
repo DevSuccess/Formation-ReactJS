@@ -10,7 +10,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <h1>Bienvenue</h1>
-        <Eleve nom = "Eva Dupont" moyenne= "15"/>
+        <Eleve nom = "Eva Dupont" moyenne= "15">"Allez toujours plus loins !"</Eleve>
         <Eleve nom = "Timothé Galo" moyenne= "8"/>
       </div>
     );
